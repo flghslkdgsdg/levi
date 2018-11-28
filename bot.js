@@ -24,7 +24,7 @@ client.user.setActivity(argresult , {type:'LISTENING'});
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
 if (message.content.startsWith('Mst')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/Mdax");
+  client.user.setGame(argresult, "https://www.twitch.tv/love");
   client.user.setStatus("idle")
    message.channel.send(` ** ${argresult} \ ** `)
 }
