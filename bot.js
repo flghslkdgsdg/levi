@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const developers = ['427611667631964180'];
+const developers = ['457656120404606987'];
 
 
 client.on('ready', () => {
@@ -33,7 +33,7 @@ if (message.content.startsWith('Mst')) {
 client.on('message', message => {
         if (!developers.includes(message.author.id)) return;
   if (message.content === '0..') {
-  let channel = client.channels.get('511744532992229377');
+  let channel = client.channels.get('534474000949313546');
 
   channel.join()
   .then(connection => console.log('Connected'))
