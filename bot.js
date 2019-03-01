@@ -6,24 +6,24 @@ const developers = ['427611667631964180'];
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setGame(`~`,'https://www.twitch.tv/Mdax')
-  client.user.setStatus("dnd")
+  client.user.setStatus("Idle")
 });
 
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('Awt')) {
+if (message.content.startsWith('Mwt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
   client.user.setStatus("idle")
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
-if (message.content.startsWith('Als')) {
+if (message.content.startsWith('Mls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
   client.user.setStatus("idle")
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
-if (message.content.startsWith('Ast')) {
+if (message.content.startsWith('Mst')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Mdax");
   client.user.setStatus("idle")
    message.channel.send(` ** ${argresult} \ ** `)
