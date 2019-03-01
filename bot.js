@@ -15,17 +15,17 @@ client.on('message', message => {
 
 if (message.content.startsWith('Mwt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
-  client.user.setStatus("idle")
+  client.user.setStatus("dnd")
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
 if (message.content.startsWith('Mls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
-  client.user.setStatus("idle")
+  client.user.setStatus("dnd")
     message.channel.send(` ** ${argresult} \ ** `)
 } else 
 if (message.content.startsWith('Mst')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Mdax");
-  client.user.setStatus("idle")
+  client.user.setStatus("dnd")
    message.channel.send(` ** ${argresult} \ ** `)
 }
 });
